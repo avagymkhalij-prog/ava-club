@@ -27,15 +27,26 @@ datasource db {
 model User {
   id           String   @id @default(cuid())
   name         String
-  email        String   @unique
-  phone        String?
-  passwordHash String
+  email        String?
+  phone        String   @unique
+  passwordHash String?
   role         String   @default("MEMBER") // Role: MEMBER | ADMIN
   createdAt    DateTime @default(now())
 
   bookings    Booking[]
   payments    Payment[]
   memberships Membership[]
+}
+
+// One-time password tokens for phone-based (SMS) login.
+model OtpToken {
+  id        String   @id @default(cuid())
+  phone     String
+  code      String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([phone])
 }
 
 model Trainer {

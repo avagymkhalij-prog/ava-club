@@ -95,7 +95,7 @@ export async function updateProfile(
       where: { id: session.user.id },
       data: {
         name,
-        phone: phone || null,
+        ...(phone ? { phone } : {}),
       },
     });
   } catch {

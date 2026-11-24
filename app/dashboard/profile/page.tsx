@@ -14,9 +14,9 @@ export default async function ProfilePage() {
   const userId = bookings?.user.id;
   const user = userId
     ? await prisma.user.findUnique({
-        where: { id: userId },
-        select: { id: true, name: true, email: true, phone: true, role: true },
-      })
+      where: { id: userId },
+      select: { id: true, name: true, email: true, phone: true, role: true },
+    })
     : null;
 
   if (!user) {

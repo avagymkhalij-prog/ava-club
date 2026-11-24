@@ -58,7 +58,7 @@ export default function Pricing() {
               </ul>
 
               <Link
-                href="/register"
+                href="/login"
                 className={cn(
                   "mt-8 rounded-full py-3 text-center text-sm font-semibold transition",
                   plan.highlighted

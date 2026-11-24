@@ -93,12 +93,13 @@ const thursdayFridaySession: SeedSession = {
 async function main() {
   // Optional admin user (safe to re-run)
   await prisma.user.upsert({
-    where: { email: "admin@ava.club" },
+    where: { phone: "09120000000" },
     update: {},
     create: {
       name: "مدیر آوا",
-      email: "admin@ava.club",
-      passwordHash: "$2a$12$LJ3m4sNKzEfUyVZH5pFYke", // replace with a real bcrypt hash in production
+      phone: "09120000000",
+      email: null,
+      passwordHash: null,
       role: "ADMIN",
     },
   });

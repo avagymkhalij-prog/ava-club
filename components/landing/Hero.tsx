@@ -41,7 +41,7 @@ export default function Hero() {
         {/* CTA buttons */}
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <Link
-            href="/register"
+            href="/login"
             className="rounded-full bg-primary-500 px-8 py-3.5 text-base font-semibold text-white shadow-soft transition hover:bg-primary-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-500"
           >
             ثبت‌نام

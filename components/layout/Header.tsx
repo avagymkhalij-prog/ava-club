@@ -37,12 +37,13 @@ export default function Header() {
         <div className="hidden items-center gap-3 md:flex">
           <Link
             href="/login"
+            // unified phone-OTP login/register page
             className="rounded-full px-4 py-2 text-sm font-medium text-primary-700 hover:bg-primary-50"
           >
             ورود
           </Link>
           <Link
-            href="/register"
+            href="/login"
             className="rounded-full bg-primary-500 px-4 py-2 text-sm font-medium text-white shadow-soft transition-colors hover:bg-primary-600"
           >
             ثبت‌نام
@@ -88,7 +89,7 @@ export default function Header() {
               ورود
             </Link>
             <Link
-              href="/register"
+              href="/login"
               onClick={() => setMobileOpen(false)}
               className="flex-1 rounded-full bg-primary-500 px-4 py-2 text-center text-sm font-medium text-white"
             >

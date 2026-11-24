@@ -40,7 +40,7 @@ export default async function AdminLayout({
   }
 
   return (
-    <div className="min-h-screen bg-cream">
+    <div className="min-h-screen bg-slate-50">
       <div className="flex min-h-screen flex-col lg:flex-row">
         {/* Sidebar — dark turquoise */}
         <aside className="shrink-0 bg-primary-800 text-primary-50 lg:w-64">
