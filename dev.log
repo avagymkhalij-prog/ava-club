@@ -1,0 +1,156 @@
+
+> ava-club@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 3.6s
+ ○ Compiling / ...
+ ✓ Compiled / in 7.4s (698 modules)
+ ✓ Compiled in 837ms (312 modules)
+ GET / 200 in 8357ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 5s (409 modules)
+ ✓ Compiled in 535ms (312 modules)
+ ✓ Compiled in 338ms (312 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\sir\Desktop\Ava clube\.next\server\app\favicon.ico'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/favicon.ico/route' in C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\sir\Desktop\Ava clube\.next\server\app\favicon.ico\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/favicon.ico/route' in 'C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/favicon.ico/route (expected C:\Users\sir\Desktop\Ava clube\.next\server\app\favicon.ico\route.js)
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-app-loader.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-app-loader.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\compiled\webpack\bundle5.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\compiled\webpack\bundle5.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\compiled\webpack\webpack.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\compiled\webpack\webpack.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\plugins\define-env-plugin.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\plugins\define-env-plugin.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\swc\index.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\swc\index.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-barrel-loader.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-barrel-loader.js
+<w>  at resolve commonjs C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-barrel-loader.js
+   Reload env: .env
+ ✓ Compiled in 368ms (298 modules)
+ ✓ Compiled in 405ms (308 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\sir\Desktop\Ava clube\.next\server\app\favicon.ico'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/favicon.ico/route' in C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\sir\Desktop\Ava clube\.next\server\app\favicon.ico\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/favicon.ico/route' in 'C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/favicon.ico/route (expected C:\Users\sir\Desktop\Ava clube\.next\server\app\favicon.ico\route.js)
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\handle-externals.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\handle-externals.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at resolve commonjs C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+ ✓ Compiled in 317ms (321 modules)
+ ✓ Compiled in 219ms (312 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\sir\Desktop\Ava clube\.next\server\app\favicon.ico'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/favicon.ico/route' in C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\sir\Desktop\Ava clube\.next\server\app\favicon.ico\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/favicon.ico/route' in 'C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/favicon.ico/route (expected C:\Users\sir\Desktop\Ava clube\.next\server\app\favicon.ico\route.js)
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\handle-externals.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\handle-externals.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at resolve commonjs C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+ ✓ Compiled in 240ms (308 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\sir\Desktop\Ava clube\.next\server\app\favicon.ico'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/favicon.ico/route' in C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\sir\Desktop\Ava clube\.next\server\app\favicon.ico\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/favicon.ico/route' in 'C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/favicon.ico/route (expected C:\Users\sir\Desktop\Ava clube\.next\server\app\favicon.ico\route.js)
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-app-loader.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-app-loader.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\compiled\webpack\bundle5.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\compiled\webpack\bundle5.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\compiled\webpack\webpack.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\compiled\webpack\webpack.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\plugins\define-env-plugin.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\plugins\define-env-plugin.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\swc\index.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\swc\index.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-barrel-loader.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-barrel-loader.js
+<w>  at resolve commonjs C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-barrel-loader.js
+ ✓ Compiled in 485ms (312 modules)
+ ✓ Compiled in 319ms (312 modules)
+ ✓ Compiled in 804ms (312 modules)
+ ✓ Compiled in 226ms (312 modules)
+ ✓ Compiled in 953ms (298 modules)
+ ✓ Compiled in 276ms (312 modules)
+ ✓ Compiled in 254ms (312 modules)
+ ✓ Compiled in 979ms (312 modules)
+   Reload env: .env
+ ✓ Compiled in 89ms (298 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\sir\Desktop\Ava clube\.next\server\app\favicon.ico'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/favicon.ico/route' in C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\sir\Desktop\Ava clube\.next\server\app\favicon.ico\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/favicon.ico/route' in 'C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/favicon.ico/route (expected C:\Users\sir\Desktop\Ava clube\.next\server\app\favicon.ico\route.js)
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\entries.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\entries.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\plugins\next-types-plugin\index.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\plugins\next-types-plugin\index.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack-config.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack-config.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at resolve commonjs C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+ ✓ Compiled in 326ms (321 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\sir\Desktop\Ava clube\.next\server\app\favicon.ico'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/favicon.ico/route' in C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'C:\Users\sir\Desktop\Ava clube\.next\server\app\favicon.ico\route.js', but to 'Error: Can't resolve '../../../../.next/server/app/favicon.ico/route' in 'C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/favicon.ico/route (expected C:\Users\sir\Desktop\Ava clube\.next\server\app\favicon.ico\route.js)
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-app-loader.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-app-loader.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\compiled\webpack\bundle5.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\compiled\webpack\bundle5.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\compiled\webpack\webpack.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\compiled\webpack\webpack.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\plugins\define-env-plugin.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\plugins\define-env-plugin.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\swc\index.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\swc\index.js
+<w>  at file dependencies C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-barrel-loader.js
+<w>  at file C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-barrel-loader.js
+<w>  at resolve commonjs C:\Users\sir\Desktop\Ava clube\node_modules\next\dist\build\webpack\loaders\next-barrel-loader.js
+ ✓ Compiled in 256ms (312 modules)
+ ✓ Compiled in 167ms (312 modules)

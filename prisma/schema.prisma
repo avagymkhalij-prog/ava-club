@@ -1,0 +1,125 @@
+// Prisma schema for Ava Clube
+// Docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+// ---------- Enums ----------
+// NOTE: SQLite does not support native enums, so roles/statuses are stored
+// as String with values documented below and validated at the app layer.
+// When migrating to PostgreSQL, replace these with real `enum` blocks:
+//
+//   Role             : MEMBER | ADMIN
+//   BookingStatus    : PENDING | CONFIRMED | CANCELLED | ATTENDED | NO_SHOW
+//   PaymentStatus    : PENDING | PAID | FAILED | REFUNDED
+//   PaymentPlan      : SINGLE | MONTHLY | QUARTERLY | YEARLY
+//   MembershipPlan   : MONTHLY | QUARTERLY | YEARLY
+//   MembershipStatus : ACTIVE | EXPIRED | CANCELLED
+//
+// ---------- Models ----------
+
+model User {
+  id           String   @id @default(cuid())
+  name         String
+  email        String   @unique
+  phone        String?
+  passwordHash String
+  role         String   @default("MEMBER") // Role: MEMBER | ADMIN
+  createdAt    DateTime @default(now())
+
+  bookings    Booking[]
+  payments    Payment[]
+  memberships Membership[]
+}
+
+model Trainer {
+  id        String  @id @default(cuid())
+  name      String
+  bio       String?
+  photoUrl  String?
+  specialty String?
+
+  classes Class[]
+}
+
+model Class {
+  id          String   @id @default(cuid())
+  slug        String?  // sport-type slug, e.g. "yoga" — groups sessions of the same sport
+  title       String
+  description String?
+  dayType     String   @default("روزهای فرد") // روزهای فرد | روزهای زوج | پنجشنبه و جمعه
+  trainerId   String?
+  trainerName String   @default("") // simple string trainer for this phase
+  dayOfWeek   Int      @default(0) // 0 = شنبه ... 6 = جمعه (legacy field, kept for sorting)
+  startTime   String   @default("08:00") // "18:00"
+  endTime     String   @default("19:00") // "19:30"
+  capacity    Int      @default(15)
+  price       Int      @default(0) // stored in smallest currency unit (e.g. Toman)
+
+  trainer  Trainer?  @relation(fields: [trainerId], references: [id], onDelete: SetNull)
+  bookings Booking[]
+
+  @@index([slug])
+  @@index([dayOfWeek, startTime])
+  @@index([trainerId])
+}
+
+model Booking {
+  id        String        @id @default(cuid())
+  userId    String
+  classId   String
+  status    String        @default("PENDING") // BookingStatus
+  createdAt DateTime      @default(now())
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  class Class @relation(fields: [classId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, classId])
+  @@index([classId])
+  @@index([userId, status])
+}
+
+model Payment {
+  id        String       @id @default(cuid())
+  userId    String
+  amount    Int
+  plan      String       // PaymentPlan: SINGLE | MONTHLY | QUARTERLY | YEARLY
+  status    String       @default("PENDING") // PaymentStatus
+  refId     String?
+  authority String?
+  createdAt DateTime     @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([authority])
+}
+
+model Membership {
+  id        String          @id @default(cuid())
+  userId    String
+  plan      String          // MembershipPlan: MONTHLY | QUARTERLY | YEARLY
+  startDate DateTime        @default(now())
+  endDate   DateTime
+  status    String          @default("ACTIVE") // MembershipStatus
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, status])
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  phone     String
+  message   String
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+}
