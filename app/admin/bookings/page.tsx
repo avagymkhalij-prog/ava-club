@@ -1,3 +1,4 @@
+import type { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
 import { updateBookingStatus } from "@/app/admin/actions";
 import ApproveBookingButton from "./ApproveBookingButton";
@@ -35,7 +36,12 @@ function toFaDate(d: Date) {
 }
 
 export default async function AdminBookingsPage() {
-  const bookings = await prisma.booking.findMany({
+  const bookings: Prisma.BookingGetPayload<{
+    include: {
+      user: { select: { name: true; email: true } };
+      class: { select: { title: true; dayType: true; startTime: true } };
+    };
+  }>[] = await prisma.booking.findMany({
     include: {
       user: { select: { name: true, email: true } },
       class: { select: { title: true, dayType: true, startTime: true } },
