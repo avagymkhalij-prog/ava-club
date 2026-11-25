@@ -1,0 +1,17 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/classes/route": "app/api/classes/route.js",
+  "/dashboard/book/page": "app/dashboard/book/page.js",
+  "/classes/[slug]/page": "app/classes/[slug]/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/classes/page": "app/classes/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/profile/page": "app/dashboard/profile/page.js",
+  "/admin/classes/page": "app/admin/classes/page.js",
+  "/admin/messages/page": "app/admin/messages/page.js",
+  "/admin/bookings/page": "app/admin/bookings/page.js",
+  "/admin/page": "app/admin/page.js"
+}
