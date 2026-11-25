@@ -10,8 +10,8 @@
   "/classes/page": "app/classes/page.js",
   "/dashboard/profile/page": "app/dashboard/profile/page.js",
   "/dashboard/page": "app/dashboard/page.js",
-  "/admin/bookings/page": "app/admin/bookings/page.js",
-  "/admin/classes/page": "app/admin/classes/page.js",
   "/admin/messages/page": "app/admin/messages/page.js",
+  "/admin/classes/page": "app/admin/classes/page.js",
+  "/admin/bookings/page": "app/admin/bookings/page.js",
   "/admin/page": "app/admin/page.js"
 }

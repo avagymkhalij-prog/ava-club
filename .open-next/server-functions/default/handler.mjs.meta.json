@@ -4271,8 +4271,8 @@
       ],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/admin/bookings/page.js": {
-      "bytes": 12055,
+    ".open-next/server-functions/default/.next/server/app/admin/messages/page.js": {
+      "bytes": 5099,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/@prisma/client/default.js",
@@ -4523,8 +4523,8 @@
       ],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/admin/messages/page.js": {
-      "bytes": 5099,
+    ".open-next/server-functions/default/.next/server/app/admin/bookings/page.js": {
+      "bytes": 12055,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/@prisma/client/default.js",
@@ -4894,9 +4894,9 @@
           "original": "C:\\Users\\sir\\Desktop\\Ava clube\\.open-next\\server-functions\\default\\.next\\server\\app\\dashboard\\page.js"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/app/admin/bookings/page.js",
+          "path": ".open-next/server-functions/default/.next/server/app/admin/messages/page.js",
           "kind": "require-call",
-          "original": "C:\\Users\\sir\\Desktop\\Ava clube\\.open-next\\server-functions\\default\\.next\\server\\app\\admin\\bookings\\page.js"
+          "original": "C:\\Users\\sir\\Desktop\\Ava clube\\.open-next\\server-functions\\default\\.next\\server\\app\\admin\\messages\\page.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/admin/classes/page.js",
@@ -4904,9 +4904,9 @@
           "original": "C:\\Users\\sir\\Desktop\\Ava clube\\.open-next\\server-functions\\default\\.next\\server\\app\\admin\\classes\\page.js"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/app/admin/messages/page.js",
+          "path": ".open-next/server-functions/default/.next/server/app/admin/bookings/page.js",
           "kind": "require-call",
-          "original": "C:\\Users\\sir\\Desktop\\Ava clube\\.open-next\\server-functions\\default\\.next\\server\\app\\admin\\messages\\page.js"
+          "original": "C:\\Users\\sir\\Desktop\\Ava clube\\.open-next\\server-functions\\default\\.next\\server\\app\\admin\\bookings\\page.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/admin/page.js",
@@ -6183,7 +6183,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/open-next.config.mjs": {
-      "bytes": 2172,
+      "bytes": 2104,
       "imports": [],
       "format": "esm"
     },
@@ -8372,14 +8372,14 @@
         ".open-next/server-functions/default/.next/server/app/dashboard/page.js": {
           "bytesInOutput": 13608
         },
-        ".open-next/server-functions/default/.next/server/app/admin/bookings/page.js": {
-          "bytesInOutput": 14806
+        ".open-next/server-functions/default/.next/server/app/admin/messages/page.js": {
+          "bytesInOutput": 5604
         },
         ".open-next/server-functions/default/.next/server/app/admin/classes/page.js": {
           "bytesInOutput": 20995
         },
-        ".open-next/server-functions/default/.next/server/app/admin/messages/page.js": {
-          "bytesInOutput": 5605
+        ".open-next/server-functions/default/.next/server/app/admin/bookings/page.js": {
+          "bytesInOutput": 14807
         },
         ".open-next/server-functions/default/.next/server/app/admin/page.js": {
           "bytesInOutput": 507081
@@ -8556,13 +8556,13 @@
           "bytesInOutput": 28212
         },
         ".open-next/server-functions/default/open-next.config.mjs": {
-          "bytesInOutput": 1591
+          "bytesInOutput": 1536
         },
         ".open-next/server-functions/default/index.mjs": {
           "bytesInOutput": 53059
         }
       },
-      "bytes": 8801903
+      "bytes": 8801848
     }
   }
 }

@@ -1,12 +1,8 @@
 name = "ava-club"
 main = ".open-next/worker.js"
-compatibility_date = "2024-09-23"
+compatibility_date = "2024-11-01"
 compatibility_flags = ["nodejs_compat"]
-
-# Static assets emitted by the OpenNext build
-[assets]
-directory = ".open-next/assets"
-binding = "ASSETS"
+pages_build_output_dir = ".open-next/assets"
 
 # D1 database binding — accessed in code via env.DB (see lib/prisma.ts)
 [[d1_databases]]
