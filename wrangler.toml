@@ -3,10 +3,3 @@ main = ".open-next/worker.js"
 compatibility_date = "2024-11-01"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".open-next/assets"
-
-# D1 database binding — accessed in code via env.DB (see lib/prisma.ts)
-[[d1_databases]]
-binding = "DB"
-database_name = "ava-club-db"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
-migrations_dir = "prisma/migrations"
